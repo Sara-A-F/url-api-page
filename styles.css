@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,600,700&display=swap");
+
+/* general styles */
+
+/* Custom Colors   var();   */
+:root {
+    --primary-cyan: hsl(180, 66%, 49%);
+    --primary-dark-violet: hsl(257, 27%, 26%);
+    --secondary-red: hsl(0, 87%, 67%);
+    --neutral-gray: hsl(0, 0%, 75%);
+    --neutral-grayish-violet: hsl(257, 7%, 63%);
+    --neutral-very-dark-blue: hsl(255, 11%, 22%);
+    --neutral-very-dark-violet: hsl(260, 8%, 14%);
+
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+.cyan {
+    background-color: var( --primary-cyan);
+    border-style: none;
+}
+
+.white {
+    background: var(--bs-white);
+    border-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  background: var(--bs-white);
+}
+
+/* Typography */
+
+.h1 {
+    font-weight: 700;
+    color: var(--bs-dark);
+}
+.h2 {
+    font-weight: 700;
+    color: var(--primary-dark-violet);
+}
+
+.h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+.h6  {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-dark-violet);
+}
+
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+
+.display-1 {
+    font-weight: 700;
+}
+
+.navbar-brand {
+    fill: var(--bs-white);
+}
+
+/* placeholder */
+
+.formbox {
+    z-index: 2;
+    margin-top: -2%;
+}
+
+.form{
+background-image: url('images/bg-shorten-desktop.svg');
+background-color: var(--primary-dark-violet);
+padding: 2%;
+border-radius: 0.5em;
+gap: 0.5em;
+
+}
+
+.input-group-text {
+    background-color: var( --primary-cyan);
+}
+
+/* cards */
+
+.calltext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--neutral-grayish-violet);
+    width: 100%;
+}
+.cards {
+    background-color: var(--neutral-grayish-violet);
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding: 5%;
+    row-gap: 2;   
+}
+
+.card {
+    background-color: var(--bs-white);
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 325px;
+    z-index: 2;
+    border-radius: 5px;
+    flex-direction: column;  
+    border-style: none; 
+    padding: 2%;      
+}
+
+.bubble-icon {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-dark-violet);
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    width: 20%;
+    padding: 5%;   
+}
+
+.line {
+   
+    position: absolute;
+    z-index: 0;
+    width: 1000px;
+    height: 6px;
+    background-color: var( --primary-cyan);
+  }
+
+
+/* First Footer */
+
+.ending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/bg-boost-desktop.svg');
+    background-color: var(--primary-dark-violet);
+    background-repeat: no-repeat;
+
+}
+.ending .h2 {
+    color: var(--bs-white); 
+}
+
+/* Footer */
+
+footer {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+}
+
+.list-group-item {
+    background-color: var(--bs-dark);
+    border-style: none;
+    text-decoration: none;
+}
+.text-muted {
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+    border-style: none;
+    text-decoration: none;
+    justify-content: left;
+}
+
+
+
+
+
+
+/*   Mobile: 375px  -----   Desktop: 1440px  */
