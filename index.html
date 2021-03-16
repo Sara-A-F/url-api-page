@@ -88,15 +88,17 @@
   <div class="container p-8 calltext">
   <!---------------------------------Start API-------------------------------------->
 
-<div class="container col-8  formbox">
-  <div class="row form"> 
-    <input  type="url" id="urlinput" class="col form-control" placeholder="Shorten a link here...">
-   <button onclick="shorturl()" class="col-2 input-group-text btn" id="url-button">Shorten It!</button>
-  </div>
+<div id="api" class="container col-6  formbox ">
+  <form class="row form shorten-url" title="shortenURL" id="shortenURL" name="urlForm"> 
+
+    <input  title="URL-input-Field" type="text" id="url" class="col form-control input-url" placeholder="Shorten a link here...">
+    <button title="submit-button" class="col-2 input-group-text btn submit-btn" id="submit-btn" type="submit" onClick="validateInput">Shorten It!</button>
+  </form>
+  <div class="error-mesg"></div>
 </div>
-<div class="error-message"></div>
-    
+
 <br>
+
 <!---------------------------------End API---------------------------------------->
     <div class="row justify-content-md-center">
       <div class="col-md-6 text-center">
@@ -219,7 +221,9 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!--main js-->
-<script src="main.js"></script>
+<script src="./main.js"></script>
+
+
 
 
 </body>
