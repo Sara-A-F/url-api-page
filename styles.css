@@ -90,8 +90,22 @@ p {
 }
 
 /* placeholder */
+.origText {
+    color: var( --primary-cyan);
+}
 
+.renderDiv{
+    background-color: var(--bs-white);
+    border-radius: 1em;
+    padding: 3%;
+    margin-top: 2%;
+     
+    
+}
 
+.btnCopy {
+    border-radius: 0.5em;
+}
 
 .formbox {
     z-index: 2;

@@ -19,7 +19,7 @@ function validateInput () {
     let inputField = document.getElementById("url").value.trim();
 
     if ( inputField !== "" ) {
-        console.log("input field", inputField)
+        console.log("input field: ", inputField)
         // store the URL
         storeURL();
     } else {
@@ -69,7 +69,29 @@ async function getShortli() {
 function renderShortli(data) {
     let dataAPI = data;
     console.log("data API: ", dataAPI);
-    // insert short Link in  HTML form (div id:api)
+    // insert short Link in  HTML form pop up (div id:api)
+    let newDiv = document.createElement('div');
+    newDiv.className = 'container renderDiv';
+    newDiv.innerHTML =`
+    <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <p >${dataAPI.result.original_link}</p>
+            
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <p class="origText">${dataAPI.result.full_short_link}</p>
+            <button class="col-4 btnCopy cyan btn btn-primary">Copy</button>
+        </div>
+    </div>
+    
+    `; // 3 selections??
+
+    let divAPI = document.getElementById("api");
+    divAPI.appendChild(newDiv);
+    console.log("new div: ", newDiv );
+
+    // Add button copy inside newDid - style and Hover
+    // 
+
 };
 
-//
