@@ -82,22 +82,21 @@
     </div>
   </div>
 </div>
-
 <br>
+<!---------------------------------Start API-------------------------------------->
+
 <div class="row justify-content-md-center">
   <div class="container p-8 calltext">
-  <!---------------------------------Start API-------------------------------------->
+    <div id="api" class="container col-6  formbox ">
+      <form class="row form shorten-url" title="shortenURL" id="shortenURL" name="urlForm"> 
 
-<div id="api" class="container col-6  formbox ">
-  <form class="row form shorten-url" title="shortenURL" id="shortenURL" name="urlForm"> 
+        <input  title="URL-input-Field" class="col form-control input-url" id="url" type="text" placeholder="Shorten a link here...">
+        <button title="submit-button" class="col-2 input-group-text btn submit-btn" id="submit-btn" type="submit" onClick="validateInput">Shorten It!</button>
+      </form>
+    <div class="error-mesg"></div>
+  </div>
 
-    <input  title="URL-input-Field" type="text" id="url" class="col form-control input-url" placeholder="Shorten a link here...">
-    <button title="submit-button" class="col-2 input-group-text btn submit-btn" id="submit-btn" type="submit" onClick="validateInput">Shorten It!</button>
-  </form>
-  <div class="error-mesg"></div>
-</div>
-
-<br>
+<br>  
 
 <!---------------------------------End API---------------------------------------->
     <div class="row justify-content-md-center">

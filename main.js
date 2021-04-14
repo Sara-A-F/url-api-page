@@ -74,13 +74,14 @@ function renderShortli(data) {
     newDiv.className = 'container renderDiv';
     newDiv.innerHTML =`
     <div class="d-grid gap-4 d-md-flex justify-content-md-end">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <p >${dataAPI.result.original_link}</p>
-            
+    
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <p class="renderText">${dataAPI.result.original_link}</p>
         </div>
+
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <p class="origText">${dataAPI.result.full_short_link}</p>
-            <button class="col-4 btnCopy cyan btn btn-primary">Copy</button>
+            <button class="col-auto btnCopy cyan btn btn-primary">Copy</button>
         </div>
     </div>
     
